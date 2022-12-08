@@ -75,7 +75,7 @@ module.exports = {
           className: 'persistent',
         }, */
         {
-          href: 'https://github.com/andex/docs',
+          href: 'https://github.com/andex-fi/docs',
           label: 'GitHub',
           position: 'right',
           className: 'persistent',

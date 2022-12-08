@@ -57,12 +57,12 @@ html[data-theme='dark'] {
   /* --ifm-color-secondary: black; */
 
   /* --ifm-background-color: #191b1f; */
-  --ifm-navbar-background-color: #191b1f;
+  --ifm-navbar-background-color: #1c191f;
   --ifm-global-shadow-md: 0 5px 4px rgba(255, 255, 255, 0.448);
 
   background-position: 0px -30vh;
   background-repeat: no-repeat;
-  background-image: radial-gradient(50% 50% at 50% 50%, rgba(33, 114, 229, 0.1) 0%, rgba(33, 36, 41, 0) 100%);
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(141, 33, 229, 0.1) 0%, rgba(37, 33, 41, 0) 100%);
 
   /* any other colors you wish to overwrite */
 }
@@ -74,7 +74,7 @@ html[data-theme='light'] {
 
   background-position: 0px -30vh;
   background-repeat: no-repeat;
-  background-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 0, 122, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(162, 0, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
 
   /* any other colors you wish to overwrite */
 }
