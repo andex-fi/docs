@@ -1,15 +1,15 @@
 ---
 id: integration-issues
 title: Token Integration Issues
-sidebar_position: 6
+sidebar_position: 4
 ---
 
-Fee-on-transfer and rebasing tokens will not function correctly on v3.
+Fee-on-transfer and rebasing tokens may not function correctly on Andex. Sui Network and the Move language generally are still new and evolving technologies so it may take longer time before there are generally accepted standards for implementation of unique type of coins.
 
 ## Fee-on-transfer Tokens
 
-Fee-on-transfer tokens will not function with our router contracts. As a workaround, the token creators may create a token wrapper or a customized router. We will not be making a router that supports fee-on-transfer tokens in the future.
+Fee-on-transfer tokens may not function with our router contracts. As a workaround, the token creators may create a token wrapper or a customized router.
 
 ## Rebasing Tokens
 
-Rebasing tokens will succeed in pool creation and swapping, but liquidity providers will bear the loss of a negative rebase when their position becomes active, with no way to recover the loss.
+Rebasing tokens will succeed in pool creation and swapping, but liquidity providers will bear the loss of a negative rebase, with no way to recover the loss.

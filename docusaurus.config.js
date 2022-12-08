@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const math = require('remark-math')
 const katex = require('rehype-katex')
 require('dotenv').config()
@@ -11,17 +12,17 @@ module.exports = {
     // From node
     nodeEnv: process.env.NODE_ENV,
   },
-  title: 'Uniswap',
+  title: 'Andex',
   tagline: 'Documentation and Guides',
-  url: 'https://docs.uniswap.org/',
+  url: 'https://docs.andex.finance/',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.png',
-  organizationName: 'Uniswap', // Usually your GitHub org/user name.
-  projectName: 'Uniswap-docs', // Usually your repo name.
+  organizationName: 'andex-fi', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
   themeConfig: {
-    image: 'img/twitter_card_bg.jpg',
+    image: 'img/logo.png',
     prism: {
       additionalLanguages: ['solidity'],
     },
@@ -31,10 +32,10 @@ module.exports = {
       appId: 'S0IDD0YGLZ',
     },
     navbar: {
-      title: 'Uniswap Docs',
+      title: 'Andex Docs',
       logo: {
-        alt: 'Uniswap Unicorn',
-        src: 'img/uni_dark_icon.svg',
+        alt: 'Andex Logo',
+        src: 'img/Subtract.png',
       },
       items: [
         {
@@ -44,47 +45,47 @@ module.exports = {
           className: 'V3_active',
         },
         {
-          to: '/contracts/v3/overview',
+          to: '/contracts/overview',
           label: 'Contracts',
           position: 'left',
           className: 'V3_active',
         },
         {
-          to: '/sdk/v3/overview',
+          to: '/sdk/overview',
           label: 'SDKs',
           position: 'left',
           className: 'V3_active',
         },
-        {
+        /* {
           to: '/api/subgraph/overview',
           label: 'APIs',
           position: 'left',
           className: 'V3_active',
-        },
+        }, */
         {
           label: 'Give Feedback',
-          to: 'https://forms.gle/13XtjmkwdXQ2jMn26',
+          to: 'https://forms.gle/6KzDM6G3448G94Sv8',
           position: 'right',
           className: 'persistent',
         },
-        {
+        /* {
           label: 'Whitepaper',
           to: 'https://uniswap.org/whitepaper-v3.pdf',
           position: 'right',
           className: 'persistent',
-        },
+        }, */
         {
-          href: 'https://github.com/uniswap/uniswap-docs',
+          href: 'https://github.com/andex/docs',
           label: 'GitHub',
           position: 'right',
           className: 'persistent',
         },
-        {
+        /* {
           href: 'https://unigrants.org/',
           label: 'Grants',
           position: 'right',
           className: 'persistent',
-        },
+        }, */
       ],
     },
     footer: {
@@ -95,19 +96,11 @@ module.exports = {
           items: [
             {
               label: 'Feedback',
-              href: 'https://forms.gle/13XtjmkwdXQ2jMn26',
+              href: 'https://forms.gle/6KzDM6G3448G94Sv8',
             },
             {
-              label: 'Bug Bounty',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery/blob/main/bug-bounty.md',
-            },
-            {
-              label: '#dev-chat',
-              href: 'https://discord.gg/ybKVQUWb4s',
-            },
-            {
-              label: 'Whitepaper',
-              href: 'https://uniswap.org/whitepaper-v3.pdf',
+              label: 'Community',
+              href: 'https://discord.gg/uNF2mqrnDU',
             },
           ],
         },
@@ -115,20 +108,12 @@ module.exports = {
           title: 'Github',
           items: [
             {
-              label: 'uniswap-v3-core',
-              href: 'https://github.com/Uniswap/uniswap-v3-core',
+              label: 'Andex Core',
+              href: 'https://github.com/andex-fi/andex-contracts',
             },
             {
-              label: 'uniswap-v3-sdk',
-              href: 'https://github.com/Uniswap/uniswap-v3-sdk',
-            },
-            {
-              label: 'uniswap-v3-periphery',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery',
-            },
-            {
-              label: 'Deployment addresses',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery/blob/main/deploys.md',
+              label: 'Andex SDK',
+              href: 'https://github.com/andex-fi/andex-sdk',
             },
           ],
         },
@@ -137,45 +122,45 @@ module.exports = {
           items: [
             {
               label: 'Home',
-              href: 'https://uniswap.org/',
+              href: 'https://andex.finance/',
             },
             {
-              label: 'App',
-              href: 'https://app.uniswap.org/',
+              label: 'DApp',
+              href: 'https://app.andex.finance/',
             },
-            {
+            /* {
               label: 'Analytics',
-              href: 'https://info.uniswap.org/home',
-            },
-            {
+              href: 'https://info.andex.finance/home',
+            }, */
+            /* {
               label: 'Token Lists',
               href: 'https://tokenlists.org/',
-            },
-            {
+            }, */
+            /* {
               label: 'Brand Assets',
               href: 'https://uniswap.org/Uniswap_brand_assets.zip',
-            },
+            }, */
           ],
         },
         {
           title: 'Community',
           items: [
-            {
+            /* {
               label: 'Governance',
               href: 'https://gov.uniswap.org/',
-            },
+            }, */
             {
               label: 'Discord',
-              href: 'https://discord.gg/ybKVQUWb4s',
+              href: 'https://discord.gg/uNF2mqrnDU',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/Uniswap',
+              href: 'https://twitter.com/andexfinance',
             },
-            {
+            /* {
               label: 'Blog',
               href: 'https://uniswap.org/blog/',
-            },
+            }, */
           ],
         },
       ],
@@ -204,7 +189,7 @@ module.exports = {
           routeBasePath: 'contracts/',
           remarkPlugins: [math],
           rehypePlugins: [katex],
-          editUrl: 'https://github.com/uniswap/uniswap-docs/tree/main/',
+          editUrl: 'https://github.com/andex-fi/docs/tree/main/',
           includeCurrentVersion: true,
         },
         blog: {

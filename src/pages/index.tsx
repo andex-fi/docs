@@ -6,7 +6,7 @@ import styled from '@emotion/styled'
 import Discord from '@site/static/img/discord.svg'
 import GitHub from '@site/static/img/github.svg'
 import Npm from '@site/static/img/npm.svg'
-import UGP from '@site/static/img/UGP.png'
+// import UGP from '@site/static/img/UGP.png'
 import Layout from '@theme/Layout'
 import ThemedImage from '@theme/ThemedImage'
 import { TraceEvent } from '@uniswap/analytics'
@@ -17,55 +17,50 @@ import {
   EventName,
 } from '@uniswap/analytics-events'
 import React from 'react'
-import { ArrowUpRight as LinkIcon, BookOpen, HelpCircle, Info, MessageCircle } from 'react-feather'
+import { ArrowUpRight as LinkIcon, BookOpen, HelpCircle, Info, Twitter } from 'react-feather'
 
 import SearchBarWithAnalytics from '../theme/SearchBar'
 
 export const actions = [
   {
-    title: 'What is Uniswap',
+    title: 'What is Andex',
     icon: Info,
     to: '/concepts/overview',
-    text: `Learn about the core concepts of the Uniswap Protocol, Swaps, Pools, Concentrated Liquidity and more.`,
+    text: `Learn about the core concepts of the Andex Protocol, Swaps, Pools, Trade to Earn and more.`,
   },
   {
-    title: 'Integrate with Uniswap',
+    title: 'Integrate with Andex',
     icon: HelpCircle,
-    to: '/sdk/v3/overview',
-    text: `Learn how to integrate with Uniswap by building a dApp through guided examples.`,
+    to: '/sdk/overview',
+    text: `Learn how to integrate with Andex by building a dApp through guided examples.`,
   },
   {
-    title: 'The Uniswap smart contracts',
+    title: 'The Andex smart contracts',
     icon: BookOpen,
-    to: '/contracts/v3/overview',
-    text: `Learn about the architecture of the Uniswap Protocol smart contracts through guided examples.`,
+    to: '/contracts/overview',
+    text: `Learn about the architecture of the Andex Protocol smart contracts through guided examples.`,
   },
 ]
 
 export const developerLinks = [
   {
-    title: 'uniswap-v3-core',
-    href: 'https://github.com/Uniswap/uniswap-v3-core',
+    title: 'Andex Core',
+    href: 'https://github.com/andex-fi/andex-contracts',
     icon: GitHub,
   },
   {
-    title: 'uniswap-v3-sdk',
-    href: 'https://github.com/Uniswap/uniswap-v3-sdk',
-    icon: GitHub,
-  },
-  {
-    title: 'uniswap-v3-periphery',
-    href: 'https://github.com/Uniswap/uniswap-v3-periphery',
+    title: 'Andex SDK',
+    href: 'https://github.com/andex-fi/andex-sdk',
     icon: GitHub,
   },
   {
     title: 'Deployment addresses',
-    href: 'https://github.com/Uniswap/uniswap-v3-periphery/blob/main/deploys.md',
+    href: 'https://github.com/andex-fi/andex-contracts/blob/main/deploys.md',
     icon: GitHub,
   },
   {
     title: 'widgets',
-    href: 'https://www.npmjs.com/package/@uniswap/widgets',
+    href: 'https://www.npmjs.com/package/@andex/widgets',
     icon: Npm,
   },
 ]
@@ -74,27 +69,27 @@ export const dAppGuides = [
   {
     title: 'Setup your environment',
     text: 'Prepare your local environment by installing the required dependencies',
-    to: '/sdk/v3/guides/quick-start',
+    to: '/sdk/guides/quick-start',
   },
   {
     title: 'Fetch token prices',
     text: 'Fetch the price of tokens in a specific Pool',
-    to: '/sdk/v3/guides/fetching-prices',
+    to: '/sdk/guides/fetching-prices',
   },
   {
     title: 'Create a Trade',
     text: 'Fetch a Quote for a Trade and execute the Trade',
-    to: '/sdk/v3/guides/creating-a-trade',
+    to: '/sdk/guides/creating-a-trade',
   },
   {
     title: 'Route trades',
     text: 'Use Routing to get optimized prices for your Trades',
-    to: '/sdk/v3/guides/auto-router',
+    to: '/sdk/guides/auto-router',
   },
   {
     title: 'Provide liquidity',
     text: "Contribute to a Pool's liquidity by using tokens to earn fees",
-    to: '/sdk/v3/guides/liquidity/minting',
+    to: '/sdk/guides/liquidity/minting',
   },
   {
     title: 'UI Component',
@@ -106,27 +101,27 @@ export const smartContractGuides = [
   {
     title: 'Setup your environment',
     text: 'Prepare your local environment by installing the required dependencies',
-    to: '/contracts/v3/guides/local-environment',
+    to: '/contracts/guides/local-environment',
   },
   {
     title: 'Implement a Swap',
-    text: 'Start swapping from a smart contract in Solidity',
-    to: '/contracts/v3/guides/swaps/single-swaps',
+    text: 'Start swapping from a smart contract in Move from Sui Client',
+    to: '/contracts/guides/swaps/single-swaps',
   },
   {
     title: 'Provide Liquidity',
-    text: 'Provide liquidity from a smart contract in Solidity',
-    to: '/contracts/v3/guides/providing-liquidity/setting-up',
+    text: 'Provide liquidity from a smart contract in Move from Sui Client ',
+    to: '/contracts/guides/providing-liquidity/setting-up',
   },
   {
     title: 'Mine Liquidity',
-    text: 'Start Mining liquidity from a smart contract in Solidity',
-    to: '/contracts/v3/guides/liquidity-mining/overview',
+    text: 'Start Mining liquidity from a smart contract in Move from Sui Client',
+    to: '/contracts/guides/liquidity-mining/overview',
   },
   {
     title: 'Implement Flash Swaps',
-    text: 'Implement Flash Swaps from a smart contract in Solidity',
-    to: '/contracts/v3/guides/flash-integrations/inheritance-constructors',
+    text: 'Implement Flash Swaps from a smart contract in Move from Sui Client',
+    to: '/contracts/guides/flash-integrations/inheritance-constructors',
   },
 ]
 
@@ -218,7 +213,7 @@ const ShadowCard = styled(Card)`
   /* background-color: var(--ifm-color-emphasis-0); */
 `
 
-const WideCard = styled(ShadowCard)`
+/*  WideCard = styled(ShadowCard)`
   max-height: auto;
 
   @media (max-width: 960px) {
@@ -226,7 +221,7 @@ const WideCard = styled(ShadowCard)`
     max-height: fit-content;
     width: fit-content;
   }
-`
+` */
 
 const IconWrapper = styled.div`
   width: 32px;
@@ -303,7 +298,7 @@ const StyledIcon = styled.div`
 
 export default function Home() {
   return (
-    <Layout title={`Uniswap Docs`} description="Technical Documentation For The Uniswap Protocol">
+    <Layout title={`Andex Docs`} description="Technical Documentation For The Andex Protocol">
       <Container>
         <DocsHeader>
           <div
@@ -315,15 +310,15 @@ export default function Home() {
               alignItems: 'center',
             }}
           >
-            <h1 style={{ fontWeight: 600 }}> Welcome to Uniswap Docs</h1>
+            <h1 style={{ fontWeight: 600 }}> Welcome to Andex Docs</h1>
             <HideMedium>
               <SearchBarWithAnalytics />
             </HideMedium>
           </div>
           <StyledTitleImage
             sources={{
-              light: useBaseUrl('/img/grow.png'),
-              dark: useBaseUrl('/img/grow2.png'),
+              light: useBaseUrl('/img/banner.png'),
+              dark: useBaseUrl('/img/banner.png'),
             }}
           />
           <Row>
@@ -361,7 +356,7 @@ export default function Home() {
         >
           <div>
             <h2>Integrate your dApp</h2>
-            <p>Explore these guided tutorials to get started integrating with Uniswap in your dApp.</p>
+            <p>Explore these guided tutorials to get started integrating with Andex in your dApp.</p>
             <div>
               {dAppGuides.map((action) => (
                 <TraceEvent
@@ -390,7 +385,7 @@ export default function Home() {
           </div>
           <div>
             <h2>Integrate your smart contacts</h2>
-            <p>Explore these guided tutorials to get started integrating with Uniswap in your smart contracts.</p>
+            <p>Explore these guided tutorials to get started integrating with Andex in your smart contracts.</p>
             <div>
               {smartContractGuides.map((action) => (
                 <TraceEvent
@@ -428,8 +423,8 @@ export default function Home() {
           <StyledImage
             style={{ maxHeight: '400px' }}
             sources={{
-              light: useBaseUrl('/img/use.png'),
-              dark: useBaseUrl('/img/use2.png'),
+              light: useBaseUrl('/img/logo.png'),
+              dark: useBaseUrl('/img/logo.png'),
             }}
           />
           <div>
@@ -471,7 +466,7 @@ export default function Home() {
             section={SectionName.BOTTOM_MENU_LINKS}
             name={EventName.PAGE_CLICKED}
           >
-            <Link style={{ textDecoration: 'none' }} href={'https://discord.gg/ybKVQUWb4s'}>
+            <Link style={{ textDecoration: 'none' }} href={'https://discord.gg/uNF2mqrnDU'}>
               <CenterCard>
                 <Discord style={{ width: '48px', height: '48px' }} />
                 <div>
@@ -487,12 +482,12 @@ export default function Home() {
             section={SectionName.BOTTOM_MENU_LINKS}
             name={EventName.PAGE_CLICKED}
           >
-            <Link style={{ textDecoration: 'none' }} href={'https://gov.uniswap.org/'}>
+            <Link style={{ textDecoration: 'none' }} href={'https://twitter.com/andexfinance/'}>
               <CenterCard>
-                <MessageCircle style={{ width: '48px', height: '48px' }} />
+                <Twitter style={{ width: '48px', height: '48px' }} />
                 <div>
-                  <h3>Forum</h3>
-                  <p>Discuss governance and more.</p>
+                  <h3>Twitter</h3>
+                  <p>Stay up to date with the lastest news</p>
                 </div>
               </CenterCard>
             </Link>
@@ -503,20 +498,20 @@ export default function Home() {
             element={ElementName.GITHUB}
             name={EventName.PAGE_CLICKED}
           >
-            <Link style={{ textDecoration: 'none' }} href={'https://github.com/Uniswap'}>
+            <Link style={{ textDecoration: 'none' }} href={'https://github.com/andex-fi'}>
               <CenterCard>
                 <StyledIcon>
                   <GitHub style={{ width: '48px', height: '48px' }} />
                 </StyledIcon>
                 <div>
                   <h3>GitHub</h3>
-                  <p>View all Uniswap repositories.</p>
+                  <p>View all Andex repositories.</p>
                 </div>
               </CenterCard>
             </Link>
           </TraceEvent>
         </Row>
-        <Link
+        {/* <Link
           style={{
             textDecoration: 'none',
             maxWidth: '960px',
@@ -542,7 +537,7 @@ export default function Home() {
               </p>
             </div>
           </WideCard>
-        </Link>
+          </Link> */}
       </Container>
     </Layout>
   )

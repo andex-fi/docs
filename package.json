@@ -1,6 +1,6 @@
 {
   "name": "@andex/docs",
-  "description": "Uniswap docs",
+  "description": "Andex docs",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

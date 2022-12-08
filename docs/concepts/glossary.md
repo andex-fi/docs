@@ -6,11 +6,11 @@ sidebar_position: 6
 
 ## Automated Market Maker
 
-An automated market maker is a smart contract on Ethereum that holds liquidity reserves. Users can trade against these reserves at prices determined by a fixed formula. Anyone may contribute liquidity to these smart contracts, earning pro-rata trading fees in return.
+An automated market maker is a smart contract on Sui that holds liquidity reserves. Users can trade against these reserves at prices determined by a fixed formula. Anyone may contribute liquidity to these smart contracts, earning pro-rata trading fees in return.
 
 ## Asset
 
-While a digital asset can take many forms, the Uniswap Protocol supports ERC-20 token pairs, and represents a position in the form of an NFT (ERC-721).
+While a digital asset can take many forms, Andex Protocol only supports Fungible token pairs, and represents a position in the form of an NFT (Non-Fungible Tokens).
 
 ## Concentrated Liquidity
 
@@ -18,19 +18,19 @@ Liquidity that is allocated within a determined price range.
 
 ## Constant Product Formula
 
-The automated market making algorithm used by Uniswap. In v1 and v2, this was x\*y=k.
+The automated market making algorithm used by Andex which is x\*y=k.
 
 ## Core
 
-Smart contracts that are considered foundational, and are essential for Uniswap to exist. Upgrading to a new version of core would require deploying an entirely new set of smart contracts on Ethereum and would be considered a new version of the Uniswap Protocol.
+Smart contracts that are considered foundational, and are essential for Andex to exist. Upgrading to a new version of core would require deploying an entirely new set of smart contracts on Sui and would be considered a new version of the Andex Protocol.
 
-## ERC20
+## Coins
 
-ERC20 tokens are fungible tokens on Ethereum. Uniswap supports all standard ERC20 implementations.
+Coins are fungible tokens on Sui Network similar to ERC20 Tokens on Ethereum. Andex supports all Coin implemented within the sui framework.
 
 ## Factory
 
-A smart contract that deploys a unique smart contract for any ERC20/ERC20 trading pair.
+A smart contract that deploys a unique object for any coin trading pair.
 
 ## Flash Swap
 
@@ -42,15 +42,15 @@ The “k” value in the constant product formula X\*Y=K
 
 ## Liquidity Provider / "LP"
 
-A liquidity provider is someone who deposits ERC20 tokens into a given liquidity pool. Liquidity providers take on price risk and are compensated with trading fees.
+A liquidity provider is someone who deposits fungible tokens into a given liquidity pool. Liquidity providers take on price risk and are compensated with trading fees.
 
 ## Liquidity
 
-Digital assets that are stored in a Uniswap pool contract, and are able to be traded against by traders.
+Digital assets that are stored in a Andex pool contract, and are able to be traded against by traders.
 
 ## Mid Price
 
-The price between the available buy and sell prices. In Uniswap V1 and V2, this is the ratio of the two ERC20 token reserves. In V3, this is the ratio of the two ERC20 token reserves available within the current active tick.
+The price between the available buy and sell prices. This is the ratio of the two token reserves. 
 
 ## Observation
 
@@ -58,15 +58,11 @@ An instance of historical price and liquidity data of a given pair.
 
 ## Pair
 
-A smart contract deployed from a Uniswap V1 or V2 factory contract that enables trading between two ERC20 tokens. Pair contracts are now called Pools in V3.
+A smart contract deployed from a Andex factory contract that enables trading between two tokens. Pair contracts can also be called Pools.
 
 ## Periphery
 
-External smart contracts that are useful, but not required for Uniswap to exist. New periphery contracts can always be deployed without migrating liquidity.
-
-## Pool
-
-A contract deployed by the V3 factory that pairs two ERC-20 assets. Different pools may have different fees despite containing the same token pair. Pools were previously called Pairs before the introduction of multiple fee options.
+External smart contracts that are useful, but not required for Andex to exist. New periphery contracts can always be deployed without migrating liquidity.
 
 ## Position
 
@@ -90,7 +86,7 @@ An approximation of a limit order, in which a single asset is provided as liquid
 
 ## Reserves
 
-The liquidity available within a pair. This was more commonly referenced before concentrated liquidity was introduced.
+The liquidity available within a pair.
 
 ## Slippage
 
@@ -103,11 +99,3 @@ The current price of a token relative to another within a given pair.
 ## Swap Fees
 
 The fees collected upon swapping which are rewarded to liquidity providers.
-
-## Tick Interval
-
-The price space between two nearest ticks.
-
-## Tick
-
-The boundaries between discrete areas in price space.
