@@ -100,7 +100,7 @@ module.exports = {
             },
             {
               label: 'Community',
-              href: 'https://discord.gg/uNF2mqrnDU',
+              href: 'https://discord.gg/kmvpvBWT',
             },
           ],
         },
@@ -109,7 +109,7 @@ module.exports = {
           items: [
             {
               label: 'Andex Core',
-              href: 'https://github.com/andex-fi/andex-contracts',
+              href: 'https://github.com/andex-fi/andex-venom-contracts',
             },
             {
               label: 'Andex SDK',
@@ -126,7 +126,7 @@ module.exports = {
             },
             {
               label: 'DApp',
-              href: 'https://app.andex.finance/',
+              href: 'https://demo.andex.finance/',
             },
             /* {
               label: 'Analytics',
@@ -151,7 +151,7 @@ module.exports = {
             }, */
             {
               label: 'Discord',
-              href: 'https://discord.gg/uNF2mqrnDU',
+              href: 'https://discord.gg/kmvpvBWT',
             },
             {
               label: 'Twitter',

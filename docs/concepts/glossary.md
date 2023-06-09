@@ -6,11 +6,11 @@ sidebar_position: 6
 
 ## Automated Market Maker
 
-An automated market maker is a smart contract on Sui that holds liquidity reserves. Users can trade against these reserves at prices determined by a fixed formula. Anyone may contribute liquidity to these smart contracts, earning pro-rata trading fees in return.
+An automated market maker is a smart contract on Venom that holds liquidity reserves. Users can trade against these reserves at prices determined by a fixed formula. Anyone may contribute liquidity to these smart contracts, earning pro-rata trading fees in return.
 
 ## Asset
 
-While a digital asset can take many forms, Andex Protocol only supports Fungible token pairs, and represents a position in the form of an NFT (Non-Fungible Tokens).
+While a digital asset can take many forms, Andex Protocol only supports Fungible token pairs, and represents a position in the form of fungible tokens also.
 
 ## Concentrated Liquidity
 
@@ -22,15 +22,15 @@ The automated market making algorithm used by Andex which is x\*y=k.
 
 ## Core
 
-Smart contracts that are considered foundational, and are essential for Andex to exist. Upgrading to a new version of core would require deploying an entirely new set of smart contracts on Sui and would be considered a new version of the Andex Protocol.
+Smart contracts that are considered foundational, and are essential for Andex to exist. Upgrading to a new version of core would require deploying an entirely new set of smart contracts on Venom and would be considered a new version of the Andex Protocol.
 
 ## Coins
 
-Coins are fungible tokens on Sui Network similar to ERC20 Tokens on Ethereum. Andex supports all Coin implemented within the sui framework.
+Coins are TIP3 fungible tokens on Venom Network similar to ERC20 Tokens on Ethereum. Andex supports all Coins implemented within the TIP3 standard.
 
 ## Factory
 
-A smart contract that deploys a unique object for any coin trading pair.
+A smart contract that deploys a unique contract for any coin trading pair.
 
 ## Flash Swap
 

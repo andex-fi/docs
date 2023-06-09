@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## Introduction
 
-The Andex protocol is a peer-to-peer[^1] system designed for exchanging cryptocurrencies on the [Sui Blockchain](https://sui.io/) blockchain. The protocol is implemented as a set of persistent, move smart contracts; designed to prioritize censorship resistance, security, self-custody, and to function without any trusted intermediaries who may selectively restrict access.
+The Andex protocol is a peer-to-peer[^1] system designed for exchanging cryptocurrencies on the [Venom Blockchain](https://venom.foundation/) blockchain. The protocol is implemented as a set of persistent, Solidity smart contracts; designed to prioritize censorship resistance, security, self-custody, and to function without any trusted intermediaries who may selectively restrict access.
 
 ## How does the Andex protocol compare to a typical market?
 

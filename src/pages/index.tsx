@@ -45,7 +45,7 @@ export const actions = [
 export const developerLinks = [
   {
     title: 'Andex Core',
-    href: 'https://github.com/andex-fi/andex-contracts',
+    href: 'https://github.com/andex-fi/andex-venom-contracts',
     icon: GitHub,
   },
   {
@@ -55,22 +55,17 @@ export const developerLinks = [
   },
   {
     title: 'Deployment addresses',
-    href: 'https://github.com/andex-fi/andex-contracts/blob/main/deploys.md',
+    href: 'https://github.com/andex-fi/andex-venom-contracts/blob/master/deploys.md',
     icon: GitHub,
   },
   {
     title: 'widgets',
-    href: 'https://www.npmjs.com/package/@andex/widgets',
+    href: 'https://www.npmjs.com/org/andex',
     icon: Npm,
   },
 ]
 
 export const dAppGuides = [
-  {
-    title: 'Setup your environment',
-    text: 'Prepare your local environment by installing the required dependencies',
-    to: '/sdk/guides/quick-start',
-  },
   {
     title: 'Fetch token prices',
     text: 'Fetch the price of tokens in a specific Pool',
@@ -91,11 +86,11 @@ export const dAppGuides = [
     text: "Contribute to a Pool's liquidity by using tokens to earn fees",
     to: '/sdk/guides/liquidity/minting',
   },
-  {
+  /*{
     title: 'UI Component',
     text: 'Integrate with the Swap Widget, a React component that works out of the box ',
     to: '/sdk/swap-widget/overview',
-  },
+  },*/
 ]
 export const smartContractGuides = [
   {
@@ -105,22 +100,22 @@ export const smartContractGuides = [
   },
   {
     title: 'Implement a Swap',
-    text: 'Start swapping from a smart contract in Move from Sui Client',
+    text: 'Start swapping from a smart contract in Solidity from Venom Client',
     to: '/contracts/guides/swaps/single-swaps',
   },
   {
     title: 'Provide Liquidity',
-    text: 'Provide liquidity from a smart contract in Move from Sui Client ',
+    text: 'Provide liquidity from a smart contract in Solidity from Venom Client ',
     to: '/contracts/guides/providing-liquidity/setting-up',
   },
   {
     title: 'Mine Liquidity',
-    text: 'Start Mining liquidity from a smart contract in Move from Sui Client',
+    text: 'Start Mining liquidity from a smart contract in Solidity from Venom Client',
     to: '/contracts/guides/liquidity-mining/overview',
   },
   {
     title: 'Implement Flash Swaps',
-    text: 'Implement Flash Swaps from a smart contract in Move from Sui Client',
+    text: 'Implement Flash Swaps from a smart contract in Solidity from Venom Client',
     to: '/contracts/guides/flash-integrations/inheritance-constructors',
   },
 ]
@@ -466,7 +461,7 @@ export default function Home() {
             section={SectionName.BOTTOM_MENU_LINKS}
             name={EventName.PAGE_CLICKED}
           >
-            <Link style={{ textDecoration: 'none' }} href={'https://discord.gg/uNF2mqrnDU'}>
+            <Link style={{ textDecoration: 'none' }} href={'https://discord.gg/kmvpvBWT'}>
               <CenterCard>
                 <Discord style={{ width: '48px', height: '48px' }} />
                 <div>

@@ -42,6 +42,6 @@ Price impact and slippage can both change while a transaction is pending, which 
 
 - **INSUFFICIENT_OUTPUT_AMOUNT** : When a user submits a swap, the Andex interface will send an estimate of how much of the purchased token the user should expect to receive. If the anticipated output amount of a swap does not match the estimate within a certain margin of error (the slippage tolerance), the swap will be canceled. This attempts to protect the user from any drastic and unfavorable price changes while their transaction is pending.
 
-[^1]: Proportional in this instance takes into account many factors, including the relative price of one token in terms of the other, slippage, price impact, and other factors related to the nature of Sui Chain.
+[^1]: Proportional in this instance takes into account many factors, including the relative price of one token in terms of the other, slippage, price impact, and other factors related to the nature of Venom Chain.
 [^2]: For information about liquidity provision, see the liquidity user guide
 [^3]: The Andex interface informs the user about the circumstances of their swap, but it is not guaranteed.
